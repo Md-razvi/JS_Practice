@@ -6,7 +6,7 @@ var a=""
 for(let i=0;i<=100;i++){
     if(i%2==0)
     {
-        //her the string a gets updated on each even number
+        //here the string a gets updated on each even number
         //Point when string gets added with number the value becomes string 
        a=a+i+" ";
     }
