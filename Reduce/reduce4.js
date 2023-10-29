@@ -15,6 +15,15 @@ var voters = [
     {name: 'Jeff', age: 30, voted: true},
     {name: 'Zack', age: 19, voted: false}
 ];
+let thoseWhoVoted=voters.reduce((acc,el)=>{
+    // let obj={};
+    if(el.voted==true){  
+        acc.push(el.name);
+    }
+    return acc;
+
+},[]);
+console.log([...thoseWhoVoted])
 // console.log()
 let voted18_25=0,numOfYoungPeople=0,voted26_35=0,numOfAdultPeople=0,voted36_55=0,numOfOldPeople=0
 let a=voters.reduce((acc,el)=>{
