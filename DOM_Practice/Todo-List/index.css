@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* border:1px solid; */
+    min-height: 80vh;
+}
+.InputList{
+
+    border:1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20vw;
+    height: 15vh;
+    justify-self: center;
+    align-self: center;
+    /* outline: none; */
+}
+.InputList div{
+    text-align: center;
+}
+.InputList input{
+    outline: none;
+}
+.InputList button{
+    font-size: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 8px;
+
+}
+table{
+    border-collapse: collapse;
+width: 100%;
+}
+table,thead,th,tr,td{
+    border:1px solid;
+    
+}
+td,th{
+    padding: 10px 20px;
+
+}
+.td3{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+.btntd{
+    padding: 4px 10px;
+}
+.Edit{
+    display: none;
+}
