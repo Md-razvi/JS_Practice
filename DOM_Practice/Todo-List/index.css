@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
 #container{
     display: grid;
     grid-template-columns: repeat(2,1fr);

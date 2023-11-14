@@ -3,7 +3,9 @@ let arr=JSON.parse(localStorage.getItem("data"))||[];
 //  localStorage.clear()
 window.onload=(e)=>{
     working()
-    Display(arr)
+    setTimeout(()=>{
+        Display(arr)},2000)
+    // Display(arr)
  };
 function working(){
     let Title=document.querySelector(".title");
@@ -12,7 +14,8 @@ function working(){
     // let btn2=document.querySelector(".Edit");
     let btn5=document.querySelector(".clear") 
     btn1.addEventListener("click",(e)=>{
-         let arr2=(arr)|| [];
+        e.stopImmediatePropagation();
+        let arr2=(arr)|| [];
         //  console.log(arr2)
          let Obj={Title:Title.value,Desc:desc.value};
         arr2.push(Obj);
@@ -21,6 +24,8 @@ function working(){
         Title.value="";
         desc.value="";
         Display(arr1)
+        
+
     })
     // btn2.addEventListener("click",(e)=>{
 
@@ -31,7 +36,9 @@ function working(){
     localStorage.clear();
     let body=document.querySelector("tbody");
     body.innerHTML=null;
-    arr=[]; 
+    arr=[];
+   e.stopImmediatePropagation();
+
     })
 
 }
@@ -48,16 +55,17 @@ function working(){
     let td3=document.createElement("td");
     let btn3=document.createElement("button");
     btn3.innerText="Delete";
-    btn3.addEventListener("click",function(){
-        Adjustment(index);
-
+    btn3.addEventListener("click",function(e){
+        // e.stopImmediatePropagation();
+        Adjustment(e,index);
     })
     btn3.setAttribute("class","btntd")
     let btn4=document.createElement("button");
     btn4.innerText="Edit";
-    btn4.addEventListener("click",function(){
+    btn4.addEventListener("click",function(e){
         this.setAttribute("display","inline")
         Editable(element,index,array)
+        // e.stopImmediatePropagation();
     })
     btn4.setAttribute("class","btntd")
     td3.setAttribute("class","td3")
@@ -68,12 +76,15 @@ function working(){
     });
     
 }
-function Adjustment(a){
+function Adjustment(e,a){
 //  console.log(a)
 // let Arr1
   arr.splice(a,1);
   localStorage.setItem("data",JSON.stringify(arr));
-  Display(arr);    
+  let arr1=JSON.parse(localStorage.getItem("data"));
+  Display(arr1); 
+  e.stopImmediatePropagation();
+     
 }
 function Editable(element,index,arr){
     
@@ -92,14 +103,19 @@ function Editable(element,index,arr){
         desc.value=e.target.value;
     })
     btn2.addEventListener("click",(e)=>{
+    
+    
     let Obj={Title:Title.value,Desc:desc.value};
     arr.splice(index,1,Obj)
     localStorage.setItem("data",JSON.stringify(arr));
-   
-    Display(arr);
+    let arr1=JSON.parse(localStorage.getItem("data"))
     btn1.style.display="inline"
     btn2.style.display="none";
-   e.stopImmediatePropagation();
+    Display(arr1)
+    Title.value="";
+    desc.value="";
+    e.stopImmediatePropagation();
+    
 
  })
     // Display(arr)
