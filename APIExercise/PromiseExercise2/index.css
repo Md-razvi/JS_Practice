@@ -40,6 +40,7 @@ text-align: center;
 .tables{
     display: flex;
     justify-content: center;
+    margin-top:10px;
 }
 
 table,tr,td,th,thead{
@@ -55,3 +56,16 @@ td{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.heads{
+    padding: 10px;
+}
+.data2{
+    padding: 10px;
+}
+.btn1{
+    padding: 10px;
+    color:white;
+    background-color: limegreen;
+    border:1px solid green;
+    border-radius: 5px;
+}
