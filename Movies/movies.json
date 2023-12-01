@@ -1,0 +1,71 @@
+{
+    "films":[
+        {
+            "id":1,
+            "Title":"Due Justice",
+            "img":"https://m.media-amazon.com/images/M/MV5BYTUzMDY2MTQtNzQ3YS00YzU1LThmMTYtNjRiOGQ0MmMxNDMxXkEyXkFqcGdeQXVyMzQwMTY2Nzk@._V1_FMjpg_UX1000_.jpg",
+            "category":"action",
+            "ratings":"&#9733; &#9733; &#9733; &#9733;" 
+         },{
+            "id":2,
+            "Title":"The Hunger Games: The Ballad of Songbirds & Snakes",
+            "img":"https://img.sflix.to/xxrz/250x400/224/16/42/1642ae8bd0f7b11ccc5b80c5b7ffe3f2/1642ae8bd0f7b11ccc5b80c5b7ffe3f2.jpg",
+            "category":"action",
+            "ratings":"&#9733; &#9733; &#9733;"
+         },{
+            "id":3,
+            "Title":"The Marvels",
+            "img":"https://img.sflix.to/xxrz/250x400/224/36/81/368175f08c3494fbab5bca96d16a83c5/368175f08c3494fbab5bca96d16a83c5.jpg",
+            "category":"action",
+            "ratings":"&#9733; "
+         },{
+            "id":4,
+            "Title":"The Bell Keeper",
+            "img":"https://img.sflix.to/xxrz/250x400/224/78/75/787506459113af179a0ceebad80e66d1/787506459113af179a0ceebad80e66d1.jpg",
+            "category":"Horror",
+            "ratings":"&#9733;  &#9733;"
+         },
+         {
+            "id":5,
+            "Title":"Justice League War World",
+            "img":"https://img.sflix.to/xxrz/250x400/224/d4/6e/d46e0478e7349f8b2fecc134d8940286/d46e0478e7349f8b2fecc134d8940286.jpg",
+            "category":"animation",
+            "ratings":"&#9733;  &#9733;"
+         },{
+            "id":6,
+            "Title":"Holiday Road",
+            "img":"https://img.sflix.is/xxrz/250x400/661/1c/5b/1c5b2f689c0cacf87f6905a98b0bb532/1c5b2f689c0cacf87f6905a98b0bb532.jpg",
+            "category":"romance",
+            "ratings":"&#9733;  &#9733;  &#9733;"
+         },
+         {
+            "id":7,
+            "Title":"Laughing All the Way",
+            "img":"https://img.sflix.to/xxrz/250x400/224/9c/d2/9cd2406b179850c237ef79e9fb4a7b86/9cd2406b179850c237ef79e9fb4a7b86.jpg",
+            "category":"romance",
+            "ratings":"&#9733;  &#9733;  &#9733;"
+         },
+         {
+            "id":8,
+            "Title":"Great Escape",
+            "img":"https://img.sflix.to/xxrz/250x400/224/e9/f7/e9f7c1ee773d7033e377ccfa2775165d/e9f7c1ee773d7033e377ccfa2775165d.jpg",
+            "category":"romance",
+            "ratings":"&#9733;  &#9733;"
+         },
+         {
+            "id":9,
+            "Title":"Holiday Road",
+            "img":"https://img.sflix.is/xxrz/250x400/661/1c/5b/1c5b2f689c0cacf87f6905a98b0bb532/1c5b2f689c0cacf87f6905a98b0bb532.jpg",
+            "category":"romance",
+            "ratings":"&#9733;  &#9733;  &#9733;"
+         }
+         ,{
+            "id":10,
+            "Title":"Holiday Road",
+            "img":"https://img.sflix.is/xxrz/250x400/661/1c/5b/1c5b2f689c0cacf87f6905a98b0bb532/1c5b2f689c0cacf87f6905a98b0bb532.jpg",
+            "category":"romance",
+            "ratings":"&#9733;  &#9733;  &#9733;"
+         }
+
+    ]
+}
