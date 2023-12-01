@@ -38,9 +38,9 @@ function Display(arr){
 table.innerHTML=null;
 table.innerHTML=`<thead>
 <tr>
-<th>Country</th>
-<th>Capital</th>
-<th>Population</th>
+<th class='heads'>Country</th>
+<th class='heads'>Capital</th>
+<th class='heads'>Population</th>
 </tr>
 </thead>
 <tbody>
@@ -50,9 +50,9 @@ let tb=document.querySelector('tbody');
 let arr1=arr.map((el)=>{
 
      let a=el.languages[0].name
-     let item=`<td>${el.name}</td>
-     <td>${el.capital}</td>
-     <td>${el.population}</td>
+     let item=`<td class="data2">${el.name}</td>
+     <td class="data2">${el.capital}</td>
+     <td class="data2">${el.population}</td>
      `;
 
      return `<tr>${item}</tr>`
