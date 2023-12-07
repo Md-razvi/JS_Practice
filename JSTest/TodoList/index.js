@@ -1,17 +1,19 @@
-let input1=document.querySelector('#name');
-let input2=document.querySelector("#desc");
 let submit=document.querySelector('form');
-let table=document.querySelector('tbody');
+let table=document.querySelector('main>div:nth-child(2)');
 let butt1=document.querySelector('.Clear');
 
 // let obj={}
 //Submit FUnction Is here
-let arr=JSON.parse(localStorage.getItem('data'))||[];
 
 submit.addEventListener('submit',function(e){
     e.preventDefault();
     // let arr1=JSON.parse(localStorage.getItem('data'))||[];   
     // if(input1.value=="" && input2.value==" ") {
+let arr=JSON.parse(localStorage.getItem('data'))||[];
+        
+    let input1=document.querySelector('#name');
+        let input2=document.querySelector("#desc");
+        
     let obj={
         name:input1.value,
         Desc:input2.value
@@ -41,6 +43,9 @@ function Display(arr){
         <button class='delete' onclick=Delete(${index})>
                 Delete
         </button>
+        <button class='delete' onclick=Edit(${index})>
+                Edit
+        </button>
         </td>
         </tr>`
         return item
@@ -59,16 +64,42 @@ butt1.addEventListener('click',function(e){
     let arr2=[]
     localStorage.setItem('data',JSON.stringify(arr2))
     // table.innerHTML=null;
-    Display(arr)
+    Display(arr2)
+    let input1=document.querySelector('#name');
+    let input2=document.querySelector("#desc");
+    input1.value="";
+    input2.value="";
     
 })
 
 
 
 function Delete(a){
+let arr=JSON.parse(localStorage.getItem('data'))||[];
+
     arr.splice(a,1);
     localStorage.setItem("data",JSON.stringify(arr))
     Display(arr)
     console.log(a)
    
+}
+function Edit(a){
+
+    let arr=JSON.parse(localStorage.getItem('data'))||[];
+    let input1=document.querySelector('#name');
+    let input2=document.querySelector("#desc");
+    input1.value=arr[a].name;
+    input2.value=arr[a].Desc;
+    let obj1={
+        name:input1.value,
+        Desc:input2.value
+    }
+    arr.splice(a,1,obj1)
+    Display(arr)
+    localStorage.setItem("data",JSON.stringify(arr));
+    
+
+
+
+
 }

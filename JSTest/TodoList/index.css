@@ -3,8 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(221, 199, 243);
+}
 header h2{
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 form{
     border:1px solid;
@@ -14,22 +18,50 @@ form{
     flex-direction: column;
     width: 100%;
     height: 100%;
+    background-color: rgb(71, 4, 194);
+    border-radius: 20px;
+    color:white;
+
+}
+input[type="submit"]{
+   padding: 8px 16px; 
+   border-radius: 8px;
+   border: none;
 }
 main{
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid;
+    height:100vh;
+
 }
 
 main>div:nth-child(1){
-    height: 120px;
+    height: 220px;
+    /* border-radius: 20px; */
+
 }
 main>div{
- width:45%;
+ width:35%;
 }
-table,th,tr,td{
+main>div:nth-child(2){
+    width: 100%;
+}
+
+
+
+#mainBody{
+    height: 250px;
+    overflow: scroll;
     border:1px solid;
-    border-collapse: collapse;
-    padding: 10px;
+}
+button{
+    /* padding: 8px 5px; */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
 }
 @media  (min-width:400px) and (max-width:600px){
     
